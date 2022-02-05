@@ -1,0 +1,101 @@
+// header
+.app-header {
+  text-align: center;
+}
+
+// main
+main {
+  margin-top: 50px;
+  display: grid;
+  justify-items: center;
+  gap: 40px;
+}
+
+// input section
+.task-form {
+  display: grid;
+  gap: 20px;
+  width: 50%;
+  padding: 10px 20px;
+  justify-items: center;
+  background-color: $main-bg;
+  overflow: hidden;
+}
+
+.task-form,
+.task-form > * {
+  font-size: $fs-medium;
+  box-shadow: -3px -3px 7px $text-shadow-variant-1-top,
+    3px 3px 5px $text-shadow-variant-1-bottom;
+}
+
+.task-form > input:focus,
+.task-form > button:active {
+  box-shadow: inset -3px -3px 7px $text-shadow-variant-1-top,
+    inset 3px 3px 5px $text-shadow-variant-1-bottom;
+  border-color: transparent;
+}
+
+.task-form__input-field {
+  width: 100%;
+  background-color: transparent;
+  border-bottom: solid 1px $main-color-1;
+  color: $main-color-1;
+}
+
+.task-form__input-field::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+.task-form button {
+  background-color: inherit;
+  color: $main-color-3;
+  border-radius: 30px 10px;
+  cursor: pointer;
+}
+
+// output section
+.task-output {
+  display: grid;
+  gap: 10px;
+  box-shadow: -3px -3px 7px $text-shadow-variant-2-top,
+    3px 3px 5px $text-shadow-variant-2-bottom;
+  background-color: $main-bg-shadow;
+  width: 60%;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 10px 15px;
+  box-shadow: -3px -3px 7px $text-shadow-variant-2-top,
+    3px 3px 5px $text-shadow-variant-2-bottom;
+}
+
+.exit-image-wrapper {
+  box-shadow: 3px 3px 5px $text-shadow-variant-2-bottom,
+    -3px -3px 7px $text-shadow-variant-2-top;
+  padding: 1px 5px;
+  cursor: pointer;
+}
+
+.exit-image-wrapper svg {
+  height: 16px;
+  fill: $main-color-3;
+  transition: fill 0.5s;
+}
+
+.exit-image-wrapper:hover svg {
+  fill: $main-color-1;
+}
+
+@media (max-width: 700px) {
+  .task-output,
+  .task-form {
+    width: 90%;
+  }
+}

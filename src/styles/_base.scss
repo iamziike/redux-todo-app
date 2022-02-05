@@ -1,0 +1,13 @@
+*::selection {
+  background-color: $orange;
+  color: $white;
+}
+
+body {
+  background: linear-gradient(to right, $main-bg, $main-bg-shadow);
+  font-family: $ff-default, sans-serif;
+  font-size: $fs-medium;
+  color: $white;
+  text-shadow: 2.4px 2.4px $main-text-shadow;
+  padding: $default-padding;
+}

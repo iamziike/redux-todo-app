@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'A-Sensible-Armadillo';
+  src: url('/assets/fonts/a-sensible-armadillo/A-Sensible-Armadillo.ttf');
+}
+
+// colors
+$ff-default: 'A-Sensible-Armadillo';
+$dark-blue: hsl(214, 47%, 18%);
+$darker-blue: hsl(213, 48%, 12%);
+$white: hsl(217, 20%, 81%);
+$black: hsl(0, 0%, 10%);
+$tomato: hsl(5, 87%, 60%);
+$orange: hsl(17, 95%, 58%);
+
+// defined colors
+$main-bg: $dark-blue;
+$main-bg-shadow: $darker-blue;
+$main-text-shadow: hsl(17, 95%, 18%);
+$main-color-1: $orange;
+$main-color-2: $tomato;
+$main-color-3: $white;
+$text-shadow-variant-1-top: hsla(214, 47%, 30%, 0.4);
+$text-shadow-variant-1-bottom: hsl(214, 47%, 10%);
+$text-shadow-variant-2-top: hsla(213, 48%, 8%);
+$text-shadow-variant-2-bottom: hsl(213, 48%, 20%);
+
+// font size
+$fs-small: 1.2rem;
+$fs-medium: 1.7rem;
+$fs-large: 3rem;
+
+// layouts
+$default-padding: 20px 30px;
