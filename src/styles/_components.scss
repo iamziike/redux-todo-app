@@ -70,6 +70,7 @@ main {
 .task {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 30px;
   padding: 10px 15px;
   box-shadow: -3px -3px 7px $text-shadow-variant-2-top,
